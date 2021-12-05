@@ -1,4 +1,4 @@
-package com.example.mimikapp
+package com.example.tactiksapp
 
 import io.flutter.embedding.android.FlutterActivity
 

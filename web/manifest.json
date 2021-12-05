@@ -1,6 +1,6 @@
 {
-    "name": "mimikapp",
-    "short_name": "mimikapp",
+    "name": "tactiksapp",
+    "short_name": "tactiksapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
