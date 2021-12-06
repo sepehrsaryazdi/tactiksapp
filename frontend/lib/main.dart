@@ -6,6 +6,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:tactiksapp/config/app_constants.dart';
 
 
+
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
@@ -22,12 +24,19 @@ void main() async {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider<UserDataProvider?>(create: (_) => hiveUserData),
   ],
-  child: const MyApp()));
+  child: const Main()));
 
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Main extends StatefulWidget {
+  const Main({Key? key}) : super(key: key);
+  @override
+  _MainState createState() => _MainState();
+}
+
+class _MainState extends State<Main> {
+
+  
 
   // This widget is the root of your application.
   @override
@@ -44,7 +53,8 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
+        secondaryHeaderColor: Colors.purple,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
