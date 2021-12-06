@@ -1,13 +1,14 @@
 # Tactiks Backend
 
 ## Build Info
-- Python 3
+- Python 3.10
 - Docker
-- Django
+- Django 3.2.5
+- djangorestframework 3.12.4
 
 ## Recommended Editors
 - VSCode 1.62.3
-- PyCharm
+- PyCharm 2021.3
 
 ## To Do List
 
