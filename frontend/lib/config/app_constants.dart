@@ -1,0 +1,1 @@
+// This file defines app constants that are used around the application.
