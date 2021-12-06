@@ -1,8 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:tactiksapp/providers/user_data_provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+//import 'package:tactiksapp/config/colors.dart';
+import 'package:tactiksapp/config/app_constants.dart';
 
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  Hive.registerAdapter(UserDataProviderAdapter());
+  var userData = await Hive.openBox<UserDataProvider>(CONSTANTS.userDataBoxName);
+
+  if(userData.isEmpty) {
+    userData.put(CONSTANTS.userDataBoxName, UserDataProvider());
+  }
+
+  var hiveUserData = userData.get(CONSTANTS.userDataBoxName);
+  userData.close();
+
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider<UserDataProvider?>(create: (_) => hiveUserData),
+  ],
+  child: const MyApp()));
+
 }
 
 class MyApp extends StatelessWidget {
