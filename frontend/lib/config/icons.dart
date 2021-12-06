@@ -5,6 +5,7 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class ICONS {
   static const home = Icon(Ionicons.home_outline); // Home Navigation Icon
+  static const info = Icon(Ionicons.newspaper_outline); // Info page icon
   static const stocksUp = Icon(Ionicons.trending_up_outline); // Stock going up icon
   static const settings = Icon(Ionicons.settings_outline); // Settings icon
   static const upload = Icon(Ionicons.cloud_upload_outline); // Upload icon

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tactiksapp/pages/home/home.dart';
 import 'package:tactiksapp/pages/settings/settings.dart';
-import 'package:tactiksapp/pages/simulate/simulate.dart';
+import 'package:tactiksapp/pages/simulations/simulations.dart';
 import 'package:tactiksapp/pages/upload/upload.dart';
 import 'package:tactiksapp/navigation/floating_button.dart';
 import 'package:tactiksapp/config/icons.dart';
 import 'package:tactiksapp/config/colors.dart';
+import 'package:tactiksapp/pages/info/info.dart';
 
 
 class Nav extends StatefulWidget {
@@ -21,7 +22,8 @@ class _NavState extends State<Nav> {
 
   final List<Widget> _widgetOptions = <Widget>[
     const Home(),
-    const Simulate(),
+    const Info(),
+    const Simulations(),
     const Upload(),
     const Settings(),
   ];
@@ -34,6 +36,8 @@ class _NavState extends State<Nav> {
 
   static const navigationIcons = [
     ICONS.home,
+    ICONS.info,
+    ICONS.upload,
     ICONS.upload,
     ICONS.settings
   ];

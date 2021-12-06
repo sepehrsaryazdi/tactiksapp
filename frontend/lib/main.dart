@@ -4,7 +4,7 @@ import 'package:tactiksapp/providers/user_data_provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 //import 'package:tactiksapp/config/colors.dart';
 import 'package:tactiksapp/config/app_constants.dart';
-
+import 'package:tactiksapp/navigation/nav.dart';
 
 
 
@@ -56,7 +56,7 @@ class _MainState extends State<Main> {
         primarySwatch: Colors.orange,
         secondaryHeaderColor: Colors.purple,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const Nav(),
     );
   }
 }
