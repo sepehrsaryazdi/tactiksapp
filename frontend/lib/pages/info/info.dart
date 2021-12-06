@@ -10,6 +10,6 @@ class Info extends StatefulWidget {
 class _InfoState extends State<Info> {
   @override
   Widget build(BuildContext context) {
-    return const Text("Test");
+    return const Text("Empty Info Page");
   }
 }

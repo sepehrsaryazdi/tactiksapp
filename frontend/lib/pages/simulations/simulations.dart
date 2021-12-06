@@ -10,6 +10,6 @@ class Simulations extends StatefulWidget {
 class _SimulationsState extends State<Simulations> {
   @override
   Widget build(BuildContext context) {
-    return const Text("Test");
+    return const Text("Empty Simulations Page");
   }
 }
