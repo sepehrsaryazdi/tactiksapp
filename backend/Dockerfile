@@ -1,5 +1,5 @@
 FROM python:3.10.0-alpine3.15
-MAINTAINER Tactiks App Developer
+LABEL Tactiks App Developer
 
 ENV PYTHONUNBUFFERED 1
 
