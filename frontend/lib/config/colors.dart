@@ -4,4 +4,5 @@ import 'package:flutter/material.dart';
 
 class COLORS {
   static const original = Color(0xFFFFD700); // Main theme colour
+  static const disabled = Color(0xFFA6AAB4); // Disabled icon colour
 }
