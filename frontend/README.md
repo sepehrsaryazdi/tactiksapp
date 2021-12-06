@@ -8,7 +8,7 @@
 
 ## Recommended Editors
 - VSCode 1.62.3
-- PyCharm
+- PyCharm 2021.3
 
 ## To Do List
 
